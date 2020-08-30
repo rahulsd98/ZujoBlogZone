@@ -54,10 +54,10 @@ public class RegisterActivity extends AppCompatActivity {
                             DatabaseReference current_users_db = mDatabase.child(user_id);
                             current_users_db.child("Username").setValue(username);
                             current_users_db.child("Image").setValue("Default");
-                            Toast.makeText(RegisterActivity.this, "Registration Successfull", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(RegisterActivity.this, "Registration Successful", Toast.LENGTH_SHORT).show();
 
                             Intent regIntent = new Intent(RegisterActivity.this, LoginActivity.class);
-                            regIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                            regIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                             startActivity(regIntent);
                         }
                     });

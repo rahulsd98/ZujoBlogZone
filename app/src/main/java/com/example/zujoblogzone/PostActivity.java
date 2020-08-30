@@ -31,13 +31,12 @@ import com.google.firebase.storage.UploadTask;
 
 public class PostActivity extends AppCompatActivity {
     private ImageButton imageButton;
-    private static final int GALLERY_REQUEST_CODE = 2;
+    private static final int GALLERY_REQUEST_CODE = 1;
     private Uri uri = null;
     private EditText textTitle;
     private EditText textDesc;
     private Button postBtn;
     private StorageReference storage;
-    private FirebaseDatabase database;
     private DatabaseReference databaseRef;
     private FirebaseAuth mAuth;
     private DatabaseReference mDatabaseUsers;
@@ -54,7 +53,7 @@ public class PostActivity extends AppCompatActivity {
         textDesc = (EditText) findViewById(R.id.TextDesc);
         textTitle = (EditText) findViewById(R.id.TextTitle);
         storage = FirebaseStorage.getInstance().getReference();
-        databaseRef = database.getInstance().getReference().child("ZujoBlogZone");
+        databaseRef = FirebaseDatabase.getInstance().getReference().child("ZujoBlogZone");
         mAuth = FirebaseAuth.getInstance();
         mCurrentUser = mAuth.getCurrentUser();
         mDatabaseUsers = FirebaseDatabase.getInstance().getReference().child("Users").child(mCurrentUser.getUid());
