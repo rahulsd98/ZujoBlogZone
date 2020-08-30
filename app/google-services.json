@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "663273638744",
+    "firebase_url": "https://zujo-blogzone.firebaseio.com",
+    "project_id": "zujo-blogzone",
+    "storage_bucket": "zujo-blogzone.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:663273638744:android:61d30b12be80134c48732d",
+        "android_client_info": {
+          "package_name": "com.example.zujoblogzone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "663273638744-9ruibjdhvrubqdoiuplgic6mr5v3u9vt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.zujoblogzone",
+            "certificate_hash": "12887bb40e465e4695c3d0c35a57ed6b9b95abfd"
+          }
+        },
+        {
+          "client_id": "663273638744-h6nb3171hkbmj7u5u9h2m1o2vkt632a1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKeJfcY0xmZdkqRxmQw6cdq-cYzOTHDHY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "663273638744-h6nb3171hkbmj7u5u9h2m1o2vkt632a1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
